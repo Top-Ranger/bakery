@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/testPlugins">
+        <file>inputFiles/valid.txt</file>
+        <file>inputFiles/validNegative.txt</file>
+        <file>inputFiles/manyHuge.txt</file>
+        <file>inputFiles/manyMixed.txt</file>
+        <file>inputFiles/manySmall.txt</file>
+        <file>inputFiles/hasToTurn.txt</file>
+    </qresource>
+</RCC>

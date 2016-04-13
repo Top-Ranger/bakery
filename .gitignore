@@ -1,0 +1,8 @@
+# Project structure
+build*/
+doxy/
+dist/
+Makefile
+
+# Qt Creator
+*.pro.user*

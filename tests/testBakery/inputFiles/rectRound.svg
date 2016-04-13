@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1" height="1">
+  <!-- Valid rx, ry -->
+  <rect x="0.0" y = "0.0" height="1.0" width="1.0" rx="0.5" ry="0.5" />
+  <!-- rx, ry too large -->
+  <rect x="0.0" y = "0.0" height="1.0" width="1.0" rx="0.7" ry="0.7" />
+  <!-- missing rx -->
+  <rect x="0.0" y = "0.0" height="1.0" width="1.0" ry="0.7" />
+  <!-- missing ry -->
+  <rect x="0.0" y = "0.0" height="1.0" width="1.0" rx="0.7" />
+  <!-- Valid rx, ry - smaller -->
+  <rect x="1.1" y = "1.2" height="1.3" width="1.4" rx="0.2" ry="0.3" />
+</svg>

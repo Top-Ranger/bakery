@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/testBakery">
+        <file>inputFiles/valid.txt</file>
+        <file>inputFiles/missingNumShapes.txt</file>
+        <file>inputFiles/missingPoint.txt</file>
+        <file>inputFiles/missingShape.txt</file>
+        <file>inputFiles/invalidSymbol.txt</file>
+        <file>inputFiles/additionalPoint.txt</file>
+        <file>inputFiles/numberShapesTooHigh.txt</file>
+        <file>inputFiles/completelyBroken.txt</file>
+        <file>outputFiles/correctOneSheet.txt</file>
+        <file>outputFiles/correctTwoShapes.txt</file>
+        <file>outputFiles/correctTwoSheets.txt</file>
+        <file>inputFiles/validNegative.txt</file>
+        <file>inputFiles/polygon.svg</file>
+        <file>inputFiles/rect.svg</file>
+        <file>inputFiles/broken.svg</file>
+        <file>inputFiles/ellipse.svg</file>
+        <file>inputFiles/rectRound.svg</file>
+        <file>inputFiles/polygonMissingCoordinate.svg</file>
+        <file>inputFiles/doubleName.txt</file>
+        <file>inputFiles/hugeFile.svg</file>
+        <file>inputFiles/hugeFile.txt</file>
+        <file>inputFiles/taskFloatRounding.txt</file>
+        <file>inputFiles/taskOneType.txt</file>
+        <file>inputFiles/taskTwoType.txt</file>
+        <file>inputFiles/validSpaces.txt</file>
+        <file>inputFiles/validWithEmptyLine.txt</file>
+    </qresource>
+</RCC>

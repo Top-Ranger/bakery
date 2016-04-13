@@ -1,0 +1,8 @@
+*.sh export-ignore
+doxy/ export-ignore
+input/ export-ignore
+dist/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.clang-format export-ignore
+results/ export-ignore

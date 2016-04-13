@@ -1,0 +1,36 @@
+[text] -> "text_begin [word]+ text_end "
+[word] -> string
+
+[shape] -> "shape_begin [name] [num_points] [points]^(num_points) shape_end "
+[name] -> [text]
+[num_points] -> int
+[points] -> "[x] [y]"
+[x] -> float
+[y] -> float
+
+[sheet] -> "sheet_begin [width] [height] [num_shapes] [shape]^(num_shapes) sheet_end "
+[width] -> float
+[height] -> float
+[num_shapes] -> int
+
+[plugininput] -> "plugininput_begin [precision] [width] [height] [num_shapes] shapelist_begin [shape]^(num_shapes) shapelist_end plugininput_end "
+[precision] -> int
+[width] -> float
+[height] -> float
+[num_shapes] -> int
+
+[pluginoutput] -> "pluginoutput_begin [num_sheets] sheetlist_begin [sheet]^(num_sheets) sheetlist_end pluginoutput_end "
+[num_sheets] -> int
+
+[pluginmetadata] -> "pluginmetadata_begin [name] [type] [author] [license] pluginmetadata_end "
+[name] -> [text]
+[type] -> [text]
+[author] -> [text]
+[license] -> [text]
+
+COMMANDS:
+"give_metadata [newline]"
+"bake_sheets [plugininput] [newline]"
+"terminate [time] [newline]"
+[time] -> int msec
+[newline] -> new line (platform dependent)

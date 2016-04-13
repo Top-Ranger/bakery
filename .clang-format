@@ -1,0 +1,1 @@
+BasedOnStyle: WebKit, ColumnLimit: 140, BreakBeforeBraces: Allman, BreakConstructorInitializersBeforeComma: false, ConstructorInitializerAllOnOneLineOrOnePerLine: true, PointerAlignment: Right

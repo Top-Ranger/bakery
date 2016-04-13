@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveDialog</class>
+ <widget class="QDialog" name="SaveDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Save output</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lResultsFileName">
+       <property name="text">
+        <string>Results file name:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="leResultsFileName"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lOutputDirectoryPath">
+       <property name="text">
+        <string>Output directory path:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="leOutputDirectoryPath">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QRadioButton" name="rbSaveAll">
+       <property name="text">
+        <string>Save all</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroupOptions</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QRadioButton" name="rbSaveBest">
+       <property name="text">
+        <string>Save best</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroupOptions</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QCheckBox" name="cbSaveSVGs">
+       <property name="text">
+        <string>Save SVG(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnBrowse">
+       <property name="text">
+        <string>Browse</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lOptions">
+       <property name="text">
+        <string>Options:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="2">
+      <widget class="QLabel" name="lStatus">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Status</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QPushButton" name="btnSave">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>leResultsFileName</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SaveDialog</receiver>
+   <slot>validate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leOutputDirectoryPath</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SaveDialog</receiver>
+   <slot>validate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbSaveSVGs</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SaveDialog</receiver>
+   <slot>validate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbSaveAll</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SaveDialog</receiver>
+   <slot>validate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbSaveBest</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SaveDialog</receiver>
+   <slot>validate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>validate()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroupOptions"/>
+ </buttongroups>
+</ui>
