@@ -24,7 +24,7 @@ Operational Research Society, 60:s93–s105, 2009).
 
 Bakery was the winning entry of the InformatiCup 2016. For more 
 information see: 
-http://informaticup.gi.de/startseite/informaticup-2016.html
+http://informaticup.gi.de/startseite/rueckblickearchiv/informaticup-2016.html
 
 ------------------------------------------------------------------------
 
